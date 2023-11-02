@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="allcss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	
+</style>
+	<title>front page</title>
+</head>
+<body>
+		<!--LOGO-->
+	<a href="https://www.google.com/">
+         <img src="" alt="LOGO" width="150" height="150">
+     </a>
+
+     	<!--Sign-Up-->
+     	<h2 style="background-color:rgb(248,209,199); width: 130px;">
+     	 <a href=""> Free Sign-in</h2> </a>
+
+     	<!--About US-->
+   <div class="card">
+  <img src="" alt="About US" style="width:150px">
+  <h1>STYLERS</h1>
+  <p class="title">Be the panache they adore</p>
+  <p> Hello Beautiful people out there,<br>
+We at “Stylers” , will try to provide with the best of the latest styles which will help you to stand out in the crowd and make you look confident , bold and beautiful .<br>
+Our team members are Vallabhi , Dhriti and Jash<br>
+</p>
+  
+	</div>
+     	
+     	<!--CHAT BOX-->
+     	<button class="open-button" onclick="openForm()">Chat</button>
+
+      <div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="button" class="btn faq" onclick="FAQ()">FAQ's</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function FAQ(){
+  var str = "FAQ";
+  faq_link=str.link("");
+   document.getElementById("myForm").innerHTML = faq_link;
+}
+
+</script>
+	<!--Desciption BOX-->
+	<div class="desciption">
+		DHRITI HAS TO GIVE THIS 4-6 LINES OF DESCRIPTION
+	</div>
+
+
+</body>
+</html>

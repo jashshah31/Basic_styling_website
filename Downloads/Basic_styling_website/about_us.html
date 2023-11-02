@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>about us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background: black;
+  }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.header {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  background: rgb(248,209,199);
+  color: black;
+  font: italic bold 20px/20px serif;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: rgb(248,209,199);
+  padding: 30px;
+  font: italic bold 15px/30px serif;
+}
+
+.container {
+  padding: 0 16px;
+ background-color: black;
+  color: rgb(248,209,199);
+  text-align: center; 
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-color:rgb(248,209,199) ;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    background-color: black;
+  color: rgb(248,209,199);
+  }
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color: black;">
+
+<div class="about-section">
+  <h1>About STYLERS</h1>
+  <p class="header">We at “Stylers” , will try to provide with the best of the latest styles which will help you to stand out in the crowd and make you look confident , bold and beautiful.</p>
+</div>
+
+<h2 style="text-align:center ; color:rgb(248,209,199) ;">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="" alt="valla" style="width:200px; height:250px;";>
+      <div class="container">
+        <h2>Vallabhi</h2>
+        <p class="title">Web Developer</p>
+        <p>Co-Founder of this Company. </p>
+        <p>vallabhi.doshi92@nmims.edu.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="" alt="jash" style="width:200px; height:250px;";>
+      <div class="container">
+        <h2>Jash Shah</h2>
+        <p class="title">Web Developer</p>
+        <p>Co-Founder of this Company. </p>
+        <p>shahjash11@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
